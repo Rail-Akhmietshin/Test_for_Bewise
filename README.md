@@ -12,13 +12,13 @@ Starting the project build:
 
 After successfully running the project in Docker, application will be available at:
 
-* http://0.0.0.0:8000
+* http://localhost:8000
 
 ## Web routes:
 
 ### Get questions for quizzes:
 
-* Route: http://0.0.0.0:8000/task/get_tasks
+* Route: http://localhost:8000/task/get_tasks
 * Method: POST
 * Data: 
 ```json
@@ -41,7 +41,7 @@ After successfully running the project in Docker, application will be available 
 
 ### Create user:
 
-* Route: http://0.0.0.0:8000/auth/create_user
+* Route: http://localhost:8000/auth/create_user
 * Method: POST
 * Data: 
 ```json
@@ -61,7 +61,7 @@ After successfully running the project in Docker, application will be available 
 
 ### Formatting an audio file from wav to mp3:
 
-* Route: http://0.0.0.0:8000/audio/upload
+* Route: http://localhost:8000/audio/upload
 * Method: POST
 * Content-Type: multipart/form-data
 * Data: 
@@ -73,14 +73,14 @@ After successfully running the project in Docker, application will be available 
 * Response: 
 ```json
 {
-    "Download URL": "http://0.0.0.0:8000/audio/record?audiofile_id=YOUR AUDIOFILE UUID&user=YOUR UNIQUE ID"
+    "Download URL": "http://localhost:8000/audio/record?audiofile_id=YOUR AUDIOFILE UUID&user=YOUR UNIQUE ID"
 }
 ```
 
 ### Getting an audio file to download:
 
 
-* Route: http://0.0.0.0:8000/audio/record?audiofile_id=YOUR AUDIOFILE UUID&user=YOUR UNIQUE ID
+* Route: http://localhost:8000/audio/record?audiofile_id=YOUR AUDIOFILE UUID&user=YOUR UNIQUE ID
 * Method: GET
 * Response: 
   <ul> 
@@ -90,4 +90,4 @@ After successfully running the project in Docker, application will be available 
 
 ### Also:
 
-* All routes are available on http://0.0.0.0:8000/docs or http://0.0.0.0:8000/redoc paths with Swagger or ReDoc.
+* All routes are available on http://localhost:8000/docs or http://localhost:8000/redoc paths with Swagger or ReDoc.
